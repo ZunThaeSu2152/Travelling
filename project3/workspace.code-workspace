@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\javascript"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "batch5"
+	}
+}

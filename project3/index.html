@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Website</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root{
+	--wcc: #f4f4f4;
+	--gyc: #777;
+	--dbc: #063a8a;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Anton', sans-serif;
+		/*vh==view port height*/
+	height: 100vh;
+
+	display:flex ;
+	justify-content: center;
+	align-items: center;
+
+	/*margin: 0;*/ /*remove scroll*/
+	overflow: hidden; /*remove scroll*/
+
+    background: url(kyaikhteeyoe.jpg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+
+
+}
+
+.container{
+	width: 480px;
+	/* background-color: var(--wcc); */
+
+			/*h v b c*/
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.container h2{
+	text-align: center;
+	margin-bottom: 0;
+    color: goldenrod;
+}
+
+.form{
+		/*top&bottom, left&right*/
+	padding: 30px 40px;
+}
+
+.form .form-group{
+	padding-bottom: 20px ;
+	margin-bottom: 10px;
+}
+
+.form-group label{
+	display: block;
+	/* color: var(--dbc); */
+    color: goldenrod;
+	margin-bottom: 8px;
+}
+
+.form-group .form-control{
+	font-family: inherit;
+	width: 100%;
+	padding: 10px;
+}
+
+.form-group .form-control:focus{
+	outline: 0;
+}
+
+.form-group .form-control::placeholder{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.form .btn{
+	font-family: inherit;
+	letter-spacing: 1px;
+	width: 100%;
+	/* background-color: navy; */
+    background-color: goldenrod;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+}
+
+.form .btn:active{
+	transform: scale(0.98);
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login Our Website</h2>
+
+            <form class="form" action="" method="">
+                <div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" autocomplete="off">
+					
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" autocomplete="off" />
+					
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" autocomplete="off" />
+					
+				</div>
+
+				<div class="form-group">
+					<label for="cfmpassword">Comfirm Password</label>
+					<input type="password" name="cfmpassword" id="cfmpassword" class="form-control" placeholder="Enter confirm password" autocomplete="off" />
+					
+				</div>
+
+				<button type="submit" name="submit" id="submit" class="btn">
+                    <a href="travelwebsite.html">Login</a>
+					
+				</button>
+				
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
